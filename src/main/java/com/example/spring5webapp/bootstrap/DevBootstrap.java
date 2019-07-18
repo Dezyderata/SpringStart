@@ -34,7 +34,6 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent>{
         lewis.getBooks().add(narnia);
         narnia.getAuthors().add(lewis);
         narnia.setPublisher(papierowy);
-        papierowy.getBooks().add(narnia);
 
         authorRepository.save(lewis);
         bookRepository.save(narnia);
